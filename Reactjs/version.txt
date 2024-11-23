@@ -1,0 +1,29 @@
+Mainitain versions in a project
+
+The version has a format of X.Y.Z
+X -> major
+Y -> minor
+Z -> patch
+where :
+Z (Minor fixes/ optional changes)-> represents any minor changes such as a minor improvement. These are the changes which might not make any changes in the user's perpective such as code cleaning or similar fixes.
+Y (Recommended/Critical fix) -> The is updated when a new feature is added or a critical bug is fixed
+X (Major change/ Breaking change) ->  This is updates while you almost build the project from sratch. 
+The reason it is called breaking change because suppose your project is running on lets say node verion 20 and now node released verion 21 if you directly update your project node version it might break your project thus node changed this part of their version while releasing verion 21.
+
+Symbols
+
+^X.Y.Z -> the ^ symbol here is used to specify that the version of X is locked and should not be updated while running a command like npm update of a particular package, only Y and Z can be updated
+~x.Y.Z -> the ~  sybmol locks both X and Y, only Z can be updated
+We have many other symbols like this
+
+Git commands while using npm
+
+npm version minor -> updates minor by one digit
+npm verion patch -> updates patch by one digit
+npm version major -> updates major by one digit
+
+Git tag
+
+Whenever you update any version and release it then you can have a tag in the git for this verion
+The git tag is useful whenever you want to run that particular version of the project 
+You can see a tag option is the main section of the github project
